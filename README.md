@@ -14,4 +14,4 @@ Battleship Game written in Python.
 
 `python battleship.py`
 
-3. Have fun!
+4. Have fun!
