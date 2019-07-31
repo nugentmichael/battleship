@@ -6,7 +6,7 @@ from random import randint
 # Create an empty list and store it in the grid variable.
 grid = []
 
-# Create a 5x5 grid of "O"s.
+# Create a 10x10 grid of "O"s.
 for x in range(10):
   grid.append(["O"] * 10)
 
