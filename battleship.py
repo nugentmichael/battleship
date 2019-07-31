@@ -21,14 +21,14 @@ ocean_board(grid)
 # Randomize the row order.
 def random_row(grid):
   row = []
-  rand_row = randint(0, len(grid) - 1)
+  rand_row = randint(2, len(grid) - 2)
   row += [rand_row - 1, rand_row, rand_row + 1]
   return row
 
 # Randomize the column order.
 def random_col(grid):
   col = []
-  rand_col = randint(0, len(grid[0]) - 1)
+  rand_col = randint(2, len(grid[0]) - 2)
   col += [rand_col - 1, rand_col, rand_col + 1]
   return col
 
