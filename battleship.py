@@ -40,6 +40,7 @@ ship_col = random_col(grid)
 print ship_row
 print ship_col
 
+# Add global hit counter variable.
 hit = 0
 
 # Run through player turns.
@@ -52,10 +53,10 @@ for turn in range(9):
   # If the guessed row and column equals to where the battleship is located, the battleship has sunk and the game is now over.
   if guess_row in ship_row and guess_col in ship_col:
     print "I've been hit!"
+    # Increase the hit count by one.
     hit = hit + 1
-    print "Hit", hit
-    grid[guess_row][guess_col] = "X"
 
+    # If the hit counter equals to 3, the battleship has sunk, and the game is now over.
     if hit == 3:
       print "You sunk my battleship!"
       break
