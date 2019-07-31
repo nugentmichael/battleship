@@ -7,8 +7,8 @@ from random import randint
 grid = []
 
 # Create a 5x5 grid of "O"s.
-for x in range(5):
-  grid.append(["O"] * 5)
+for x in range(10):
+  grid.append(["O"] * 10)
 
 # Loop through the rows and add an empty blank character space between each column character.
 def ocean_board(grid):
@@ -58,7 +58,7 @@ for turn in range(4):
       print "You missed my battleship!"
       grid[guess_row][guess_col] = "X"
 
-    # Advance the turn number by one.
+	# Advance the turn number by one.
     print turn + 1
     ocean_board(grid)
     
